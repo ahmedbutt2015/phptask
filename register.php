@@ -1,5 +1,12 @@
 <?php
+<<<<<<< HEAD
     require ('/config.php');
+=======
+session_start();
+if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
+    header("Location:/userLandingPage.php");
+}
+>>>>>>> bf968ed30a8947947abf2364f553e7e55b07b4ba
 ?>
 <!doctype html>
 <html lang="en">
