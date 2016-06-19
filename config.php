@@ -2,7 +2,7 @@
 
 session_start();
 
-function isAuthenticated(){
+function isAuthenticated(){ 
     return isset($_SESSION['username'], $_SESSION['password']);
 }
 
@@ -10,7 +10,8 @@ $uri = $_SERVER['REQUEST_URI'];
 $routes = [
     'auth' => [
         '/userLandingPage.php',
-        '/logout.php'
+        '/logout.php',
+	'/editPage.php'
     ],
     'unauth' => [
         '/',        /*Index page*/
